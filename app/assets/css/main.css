@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@theme inline {
+  --font-heading: "Fustat", sans-serif;
+  --font-body: "Inter", sans-ser=if;
+
+  --color-background: hsl(0, 0%, 95%);
+  --color-foreground: hsl(0, 0%, 0%);
+  --color-card: hsl(0, 0%, 100%);
+  --color-primary: hsl(83, 63%, 44%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+
+  --color-accent-foreground: hsl(83, 64%, 25%);
+  --color-muted: hsl(0, 0%, 90%);
+  --color-muted-foreground: hsl(0, 0%, 30%);
+
+  --color-border: hsl(0, 0%, 80%);
+
+  --shadow-button: 0px -2px 1px 0px hsla(0, 0%, 0%, 0.2) inset,
+    0px 2px 1px 0px hsla(0, 0%, 100%, 0.25) inset;
+
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: calc(var(--spacing) * 4);
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--reka-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--reka-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@utility bleed-start {
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  width: calc(100vw - ((100vw - 100%) / 2));
+}
+
+@utility bleed-end {
+  margin-right: calc(-1 * (100vw - 100%) / 2);
+  width: calc(100vw - ((100vw - 100%) / 2));
+}
+
+@utility bleed {
+  margin-left: calc(-1 * (100vw - 100%) / 2);
+  margin-right: calc(-1 * (100vw - 100%) / 2);
+  width: 100vw;
+}
+
+@utility check-list {
+  li + li {
+    margin-top: calc(var(--spacing) * 4);
+  }
+
+  li {
+    position: relative;
+    padding-left: calc(var(--spacing) * 10);
+  }
+
+  li::before {
+    position: absolute;
+    top: calc(var(--spacing) * 0.75);
+    left: 0;
+    content: url(https://api.iconify.design/lucide/check.svg?height=24&color=%2381b72a);
+  }
+
+  h4 {
+    font-weight: var(--font-weight-bold);
+    padding-bottom: calc(var(--spacing) * 1);
+    font-size: var(--text-lg);
+  }
+}
+
+body {
+  color: var(--color-foreground);
+  background-color: var(--color-background);
+  font-family: var(--font-body);
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
