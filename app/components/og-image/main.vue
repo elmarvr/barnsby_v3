@@ -4,11 +4,11 @@ import type {
   ContentNlCollectionItem,
 } from "@nuxt/content";
 
-defineProps<{
+const props = defineProps<{
   page: ContentEnCollectionItem | ContentNlCollectionItem;
 }>();
 </script>
 
 <template>
-  <div></div>
+  <div class="bg-[#81b72a] w-full h-full text-white text-8xl">Barnsby</div>
 </template>

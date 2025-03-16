@@ -2,7 +2,7 @@
 import type { ClassValue, VariantProps } from "cva";
 
 const sectionCardVariants = cva({
-  base: "bg-card shadow-lg grid grid-cols-3 overflow-hidden",
+  base: "bg-card shadow-lg flex flex-col-reverse xl:grid grid-cols-3 overflow-hidden",
   variants: {
     align: {
       start: "bleed-start rounded-r-2xl",
@@ -29,7 +29,7 @@ const props = defineProps<{
 
     <div
       :data-align="align"
-      class="p-16 col-span-2 data-[align=end]:order-first"
+      class="p-6 xl:p-16 col-span-2 xl:data-[align=end]:order-first"
     >
       <slot />
     </div>

@@ -1,5 +1,10 @@
 <template>
-  <Html>
+  <Html
+    class="scroll-pt-(--navigation-height)"
+    :style="{
+      '--navigation-height': spacing(15),
+    }"
+  >
     <Body>
       <NuxtLayout>
         <NuxtPage />

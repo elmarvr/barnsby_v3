@@ -6,13 +6,13 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   modules: [
-    "@nuxt/content",
     "@nuxt/icon",
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@nuxtjs/seo",
+    "@nuxt/content",
   ],
   future: {
     compatibilityVersion: 4,
@@ -68,4 +68,11 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
   },
+  ogImage: {
+    componentDirs: ["app/components/og-image"],
+    componentOptions: {
+      global: true,
+    },
+  },
+  vueuse: {},
 });

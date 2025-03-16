@@ -44,3 +44,5 @@ export function useNavigation() {
     to: RouteLocationNamedI18n;
   }[];
 }
+
+export function navigationHeight() {}

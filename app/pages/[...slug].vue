@@ -30,6 +30,8 @@ const { data: page } = await useAsyncData(
     watch: [locale],
   }
 );
+
+defineOgImageComponent("main");
 </script>
 
 <template>

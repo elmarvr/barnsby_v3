@@ -26,7 +26,7 @@ const forwarded = useForwardPropsEmits(delegated, emits);
       v-bind="forwarded"
       :class="
         cx(
-          'z-50 min-w-32 rounded-md bg-slate-50 border border-slate-200 shadow-md p-1 text-slate-950',
+          'z-50 min-w-32 rounded-md data-[state=open]:animate-in data-[state=open]:zoom-in-95 data-[state=open]:slide-in-from-top-2 bg-slate-50 border border-slate-200 shadow-md p-1 text-slate-950',
           props.class
         )
       "

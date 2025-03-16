@@ -13,7 +13,7 @@ const { data: contacts } = await useAsyncData(async () => {
       <slot mdc-unwrap="p" name="title" />
     </SectionTitle>
 
-    <div class="flex gap-16">
+    <div class="flex flex-col xl:flex-row gap-16">
       <div
         v-for="contact in contacts"
         :key="contact.id"
@@ -24,15 +24,15 @@ const { data: contacts } = await useAsyncData(async () => {
         <ul class="contents">
           <li class="flex items-center gap-x-2">
             <Icon name="lucide:mail" class="text-muted-foreground text-lg" />
-            <a :href="`mailto:${contact.email}`" class="hover:underline">{{
-              contact.email
-            }}</a>
+            <a :href="`mailto:${contact.email}`" class="hover:underline">
+              {{ contact.email }}
+            </a>
           </li>
           <li class="flex items-center gap-x-2">
             <Icon name="lucide:phone" class="text-muted-foreground text-lg" />
-            <a :href="`tel:${contact.phone}`" class="hover:underline">{{
-              contact.phone
-            }}</a>
+            <a :href="`tel:${contact.phone}`" class="hover:underline">
+              {{ contact.phone }}
+            </a>
           </li>
           <li class="flex items-center gap-x-2">
             <Icon name="lucide:map-pin" class="text-muted-foreground text-lg" />

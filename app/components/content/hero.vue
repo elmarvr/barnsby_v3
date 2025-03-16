@@ -18,7 +18,7 @@ const { data: features } = await useAsyncData(() => {
       />
     </div>
 
-    <div class="flex flex-col max-w-5xl mx-auto">
+    <div class="flex flex-col container max-w-5xl">
       <h1 class="text-primary text-6xl font-bold">
         <slot mdc-unwrap="p" />
       </h1>
@@ -26,13 +26,14 @@ const { data: features } = await useAsyncData(() => {
       <p class="text-white py-10 pb-6 text-xl font-medium">
         {{ $t("common.feature-announcement") }}:
       </p>
+
       <ul class="flex flex-col gap-6">
         <li
-          class="text-white gap-4 flex items-center text-center"
+          class="text-white gap-4 flex items-center"
           v-for="feature in features"
           :key="feature.id"
         >
-          <Icon :name="feature.icon" size="calc(var(--spacing)*8)" />
+          <Icon :name="feature.icon" :size="spacing(8)" />
           <p>
             {{ feature.title }}
           </p>
