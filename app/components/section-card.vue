@@ -2,7 +2,7 @@
 import type { ClassValue, VariantProps } from "cva";
 
 const sectionCardVariants = cva({
-  base: "bg-card shadow-lg flex flex-col-reverse xl:grid grid-cols-3 overflow-hidden",
+  base: "bg-card shadow-lg relative flex flex-col-reverse sm:grid grid-cols-3 overflow-hidden",
   variants: {
     align: {
       start: "bleed-start rounded-r-2xl",
@@ -25,11 +25,10 @@ const props = defineProps<{
 
 <template>
   <div :class="sectionCardVariants({ align, class: props.class })">
-    <NuxtImg class="size-full object-cover" :src="image" />
-
+    <NuxtImg class="size-full object-cover aspect-[2/1]" :src="image" />
     <div
       :data-align="align"
-      class="p-6 xl:p-16 col-span-2 xl:data-[align=end]:order-first"
+      class="p-6 xl:p-16 col-span-2 relative data-[align=end]:order-first"
     >
       <slot />
     </div>

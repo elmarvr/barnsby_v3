@@ -15,7 +15,7 @@ const defaultValue = computed(() => steps.value?.[0]?.id);
 </script>
 
 <template>
-  <Section id="method" class="grid md:grid-cols-2 gap-x-7">
+  <Section id="method" class="grid xl:grid-cols-2 gap-x-7">
     <SectionTitle>
       <template #subtitle>
         <slot name="subtitle" />

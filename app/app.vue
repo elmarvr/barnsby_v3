@@ -1,6 +1,6 @@
 <template>
   <Html
-    class="scroll-pt-(--navigation-height)"
+    class="scroll-pt-(--navigation-height) md:scroll-smooth"
     :style="{
       '--navigation-height': spacing(15),
     }"

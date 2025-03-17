@@ -6,7 +6,7 @@ const { data: services } = await useAsyncData(async () => {
 </script>
 
 <template>
-  <Section id="services">
+  <Section id="services" class="grid sm:grid-cols-2 xl:grid-cols-1">
     <SectionTitle class="xl:text-center">
       <template #subtitle>
         <slot name="subtitle" />
@@ -18,7 +18,7 @@ const { data: services } = await useAsyncData(async () => {
       <li
         v-for="service in services"
         :key="service.id"
-        class="flex flex-1 min-h-0 xl:flex-col items-center text-center gap-4 text-sm"
+        class="flex flex-1 min-h-0 xl:flex-col xl:text-center items-center gap-4 text-sm"
       >
         <Icon :name="service.icon" class="text-primary" :size="spacing(10)" />
         <p class="font-medium">{{ service.title }}</p>

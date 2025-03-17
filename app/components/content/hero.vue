@@ -16,14 +16,17 @@ const { data: features } = await useAsyncData(() => {
         layout="fill"
         class="size-full object-cover brightness-40"
       />
+      <div
+        class="absolute bottom-0 left-0 right-0 h-4 bg-background rounded-t-4xl"
+      />
     </div>
 
-    <div class="flex flex-col container max-w-5xl">
-      <h1 class="text-primary text-6xl font-bold">
+    <div class="flex flex-col container lg:max-w-5xl pb-4">
+      <h1 class="text-primary text-4xl sm:text-6xl font-bold">
         <slot mdc-unwrap="p" />
       </h1>
 
-      <p class="text-white py-10 pb-6 text-xl font-medium">
+      <p class="text-white py-10 pb-6 text-lg font-medium">
         {{ $t("common.feature-announcement") }}:
       </p>
 
