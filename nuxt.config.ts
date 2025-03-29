@@ -89,7 +89,11 @@ export default defineNuxtConfig({
   nitro: {
     static: import.meta.env.NODE_ENV === "production",
     prerender: {
-      routes: ["/nl", "/en"],
+      routes: ["/nl", "/en", "/sitemap.xml"],
     },
+  },
+
+  linkChecker: {
+    skipInspections: ["missing-hash"],
   },
 });

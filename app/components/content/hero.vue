@@ -48,7 +48,7 @@ const { data: features } = await useAsyncData(() => {
         <UiButton as-child variant="muted">
           <NuxtLinkLocale
             :to="{
-              hash: '#buyers',
+              hash: '#contact',
             }"
           >
             {{ $t("navigation.buyers") }}
