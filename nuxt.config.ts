@@ -48,6 +48,8 @@ export default defineNuxtConfig({
       typedOptionsAndMessages: "all",
     },
 
+    strategy: "prefix",
+
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: "i18n_redirected",
@@ -87,7 +89,7 @@ export default defineNuxtConfig({
   nitro: {
     static: import.meta.env.NODE_ENV === "production",
     prerender: {
-      routes: ["/", "/en"],
+      routes: ["/nl", "/en"],
     },
   },
 });
