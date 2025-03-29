@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: contacts } = await useAsyncData(async () => {
-  return queryCollection("contacts").all();
+const { data: contacts } = await useAsyncData("contacts", async () => {
+  return await queryCollection("contacts").all();
 });
 </script>
 

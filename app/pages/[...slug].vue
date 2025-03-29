@@ -16,6 +16,10 @@ const slug = computed(() => {
   return [];
 });
 
+const collection = computed(() => {
+  return `content_${locale.value}` as const;
+});
+
 const path = computed(() => {
   return withLeadingSlash(
     joinURL(locale.value, ...slug.value.filter((part) => part !== locale.value))
@@ -23,11 +27,7 @@ const path = computed(() => {
 });
 
 const { data: page } = await useAsyncData(path.value, async () => {
-  const data = await queryCollection(`content_${locale.value}`)
-    .path(path.value)
-    .first();
-
-  return data;
+  return await queryCollection(collection.value).path(path.value).first();
 });
 
 if (!page.value) {

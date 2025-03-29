@@ -1,7 +1,12 @@
 <script setup lang="ts">
 const { locale } = useI18n();
-const { data: services } = await useAsyncData(async () => {
-  return queryCollection(`services_${locale.value}`).all();
+
+const collection = computed(() => {
+  return `services_${locale.value}` as const;
+});
+
+const { data: services } = await useAsyncData(collection.value, async () => {
+  return queryCollection(collection.value).all();
 });
 </script>
 

@@ -9,8 +9,12 @@ import {
 
 const { locale } = useI18n();
 
-const { data: steps } = await useAsyncData(() => {
-  return queryCollection(`method_${locale.value}`).all();
+const collection = computed(() => {
+  return `method_${locale.value}` as const;
+});
+
+const { data: steps } = await useAsyncData(collection.value, async () => {
+  return await queryCollection(collection.value).all();
 });
 
 const defaultValue = computed(() => steps.value?.[0]?.id);
