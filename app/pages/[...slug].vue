@@ -30,6 +30,13 @@ const { data: page } = await useAsyncData(path.value, async () => {
   return data;
 });
 
+if (!page.value) {
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Page not found",
+  });
+}
+
 defineOgImageComponent("main");
 </script>
 
