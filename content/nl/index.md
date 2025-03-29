@@ -1,5 +1,6 @@
 ---
 title: Barnsby Consulting
+description: Barnsby Consulting is een adviesbureau dat ondernemingen helpt met advies, financiering en operationele ondersteuning
 ---
 
 ::hero
@@ -20,15 +21,15 @@ Dienstverlening
 
 ::sellers
 
-- #### Aan- en verkoop ervaring
+- ### Aan- en verkoop ervaring
   Maak gebruik van jarenlange aan- en verkoop ervaring wanneer u uw onderneming te koop zet
-- #### Bewezen netwerk
+- ### Bewezen netwerk
   Maak gebruik van een bewezen netwerk van financiers
-- #### Ervaring in uw positie
+- ### Ervaring in uw positie
   Deel de last met mensen die ook jarenlange ervaring hebben in uw positie
-- #### Strikt financieel en commercieel regime
+- ### Strikt financieel en commercieel regime
   Profiteer ook al voor de verkoop van een strikt financieel en commercieel regime
-- #### No cure - No pay
+- ### No cure - No pay
   U betaalt alleen wanneer uw onderneming ook daadwerkelijk verkocht wordt
 
 #title
@@ -41,11 +42,11 @@ Verkopers
 
 ::buyers
 
-- #### Diverse portefeuille met diverse bedrijven
+- ### Diverse portefeuille met diverse bedrijven
   Barnsby bemiddelt voor bedrijven uit verschillende verticals, maar allen, binnen hun segment, hoog renderend
-- #### Goed gestructureerd
+- ### Goed gestructureerd
   Tijdens het opstellen van het Informatiememorandum wordt ook de structuur en het management van de ter overname aangeboden onderneming doorgelicht
-- #### Geen verkooppraatjes
+- ### Geen verkooppraatjes
   Barnsby laat de feiten en cijfers voor zich spreken zonder franje
 
 #title
@@ -68,13 +69,13 @@ Werkwijze
 
 ::coaching
 
-- #### Snelle Gecontroleerde Groei
-- #### Sparring
-- #### Personeel
-- #### Starten Nieuwe Activiteiten
-- #### Organisatie Opbouw
-- #### Finance
-- #### Kostenbeheersing
+- ### Snelle Gecontroleerde Groei
+- ### Sparring
+- ### Personeel
+- ### Starten Nieuwe Activiteiten
+- ### Organisatie Opbouw
+- ### Finance
+- ### Kostenbeheersing
 
 #title
 Coaching van ondernemers, directie en hoger management

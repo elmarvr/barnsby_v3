@@ -9,10 +9,10 @@
         />
       </div>
       <div class="border-t py-3 text-sm text-muted-foreground">
-        <a class="group hover:underline">
-          {{ $t("common.developed-by") }}
-          <span class="text-pink-500 group-hover:text-blue-500 font-medium">
-            Boy<span class="text-blue-500 group-hover:text-pink-500">Girl</span>
+        <a class="group hover:underline" href="https://boygirl.dev">
+          {{ $t("developed-by") }}
+          <span class="text-pink-700 group-hover:text-blue-700 font-medium">
+            Boy<span class="text-blue-700 group-hover:text-pink-700">Girl</span>
           </span>
         </a>
       </div>

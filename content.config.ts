@@ -40,6 +40,7 @@ export default defineContentConfig({
       },
       schema: contentSchema,
     }),
+
     services_en: defineCollection({
       type: "data",
       source: {
@@ -56,6 +57,7 @@ export default defineContentConfig({
       },
       schema: featureSchema,
     }),
+
     features_en: defineCollection({
       type: "data",
       source: {
@@ -72,11 +74,20 @@ export default defineContentConfig({
       },
       schema: serviceSchema,
     }),
+
     method_en: defineCollection({
       type: "data",
       source: {
         include: "en/method/*.md",
         prefix: "/en",
+      },
+      schema: methodSchema,
+    }),
+    method_nl: defineCollection({
+      type: "data",
+      source: {
+        include: "nl/method/*.md",
+        prefix: "/nl",
       },
       schema: methodSchema,
     }),

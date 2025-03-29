@@ -1,5 +1,4 @@
 import tailwindcss from "@tailwindcss/vite";
-import { visit } from "unist-util-visit";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -28,21 +27,31 @@ export default defineNuxtConfig({
     typedPages: true,
   },
   i18n: {
+    langDir: "../app/lang",
     locales: [
       {
         code: "en",
         language: "en-UK",
+        name: "English",
+        files: ["en.json"],
       },
       {
         code: "nl",
         language: "nl-NL",
+        name: "Nederlands",
+        files: ["nl.json"],
       },
     ],
     defaultLocale: "nl",
-    vueI18n: "~/i18n.config.ts",
     types: "composition",
     experimental: {
       typedOptionsAndMessages: "all",
+    },
+
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root",
     },
   },
   googleFonts: {
@@ -74,5 +83,11 @@ export default defineNuxtConfig({
       global: true,
     },
   },
-  vueuse: {},
+
+  nitro: {
+    static: import.meta.env.NODE_ENV === "production",
+    prerender: {
+      routes: ["/", "/en"],
+    },
+  },
 });

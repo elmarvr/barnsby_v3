@@ -42,6 +42,7 @@ syncRef(isOpen, isLocked, {
             path: '/',
           }"
           class="flex"
+          aria-label="Home"
         >
           <Icon name="barnsby:brand" class="text-primary text-3xl" />
         </NuxtLinkLocale>

@@ -39,8 +39,6 @@ export function useSection(target: MaybeComputedElementRef) {
       if (entry.isIntersecting) {
         activeSection.value = entry.target.id;
 
-        console.log(entry.target.id);
-
         return;
       }
     },

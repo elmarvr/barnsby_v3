@@ -22,14 +22,13 @@ const path = computed(() => {
   );
 });
 
-const { data: page } = await useAsyncData(
-  async () => {
-    return queryCollection(`content_${locale.value}`).path(path.value).first();
-  },
-  {
-    watch: [locale],
-  }
-);
+const { data: page } = await useAsyncData(path.value, async () => {
+  const data = await queryCollection(`content_${locale.value}`)
+    .path(path.value)
+    .first();
+
+  return data;
+});
 
 defineOgImageComponent("main");
 </script>

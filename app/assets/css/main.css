@@ -9,7 +9,7 @@
   --color-foreground: hsl(0, 0%, 0%);
   --color-card: hsl(0, 0%, 100%);
   --color-primary: hsl(83, 63%, 44%);
-  --color-primary-foreground: hsl(0, 0%, 100%);
+  --color-primary-foreground: hsl(0, 0%, 0%);
 
   --color-accent-foreground: hsl(83, 64%, 25%);
   --color-muted: hsl(0, 0%, 90%);
@@ -117,28 +117,33 @@
     content: url(https://api.iconify.design/lucide/check.svg?height=24&color=%2381b72a);
   }
 
-  h4 {
+  h3 {
     font-weight: var(--font-weight-bold);
-    padding-bottom: calc(var(--spacing) * 1);
     font-size: var(--text-lg);
+  }
+
+  h3 + p {
+    margin-top: calc(var(--spacing) * 1);
   }
 }
 
-body {
-  color: var(--color-foreground);
-  background-color: var(--color-background);
-  font-family: var(--font-body);
-}
+@layer base {
+  body {
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    font-family: var(--font-body);
+  }
 
-* {
-  border-color: var(--color-border);
-}
+  * {
+    border-color: var(--color-border);
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
 }

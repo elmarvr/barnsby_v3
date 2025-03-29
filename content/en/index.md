@@ -1,5 +1,6 @@
 ---
 title: Barnsby Consulting
+description: Barnsby Consulting is a consultancy that helps businesses with advice, finance and operational support
 ---
 
 ::hero
@@ -20,15 +21,15 @@ Service
 
 ::sellers
 
-- #### Buying and selling experience
+- ### Buying and selling experience
   Make use of years of buying and selling experience when you sell your company
-- #### Proven network
+- ### Proven network
   Make use of a proven network of financiers
-- #### Experience in your role
+- ### Experience in your role
   Share the burden with people who also have years of experience in your role
-- #### Strict financial and commercial regime
+- ### Strict financial and commercial regime
   Even before selling, take advantage of a strict financial and commercial regime
-- #### No cure - No pay
+- ### No cure - No pay
   You only pay when your company is actually sold
 
 #title
@@ -41,11 +42,11 @@ Sellers
 
 ::buyers
 
-- #### Diverse portfolio with various companies
+- ### Diverse portfolio with various companies
   Barnsby mediates for companies from different verticals, but all, within their segment, are highly profitable
-- #### Well structured
+- ### Well structured
   While the Information Memorandum is being drawn up, the structure and management of the company offered for takeover is also examined
-- #### No sales pitch
+- ### No sales pitch
   Barnsby lets the facts and figures speak for themselves without frills
 
 #title
@@ -68,13 +69,13 @@ Method
 
 ::coaching
 
-- #### Fast controlled growth
-- #### Sparring
-- #### Staff
-- #### Start new activities
-- #### Organization structure
-- #### Finance
-- #### Cost control
+- ### Fast controlled growth
+- ### Sparring
+- ### Staff
+- ### Start new activities
+- ### Organization structure
+- ### Finance
+- ### Cost control
 
 #title
 Coaching of entrepreneurs, directors and higher management

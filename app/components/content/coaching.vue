@@ -1,6 +1,11 @@
 <template>
   <Section id="coaching">
-    <SectionCard image="/images/coaching.jpg">
+    <SectionCard
+      :image="{
+        src: '/images/coaching.jpg',
+        alt: $t('image.coaching'),
+      }"
+    >
       <SectionTitle>
         <template #subtitle>
           <slot name="subtitle" />
@@ -11,13 +16,13 @@
       <div class="check-list">
         <slot />
         <div class="pt-12">
-          <UiButton>
+          <UiButton as-child>
             <NuxtLinkLocale
               :to="{
                 hash: '#contact',
               }"
             >
-              {{ $t("common.contact-us") }}
+              {{ $t("contact-us") }}
             </NuxtLinkLocale>
           </UiButton>
         </div>

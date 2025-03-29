@@ -7,8 +7,10 @@ import {
   AccordionTrigger,
 } from "reka-ui";
 
+const { locale } = useI18n();
+
 const { data: steps } = await useAsyncData(() => {
-  return queryCollection("method_en").all();
+  return queryCollection(`method_${locale.value}`).all();
 });
 
 const defaultValue = computed(() => steps.value?.[0]?.id);

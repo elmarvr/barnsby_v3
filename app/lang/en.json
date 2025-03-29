@@ -1,0 +1,18 @@
+{
+  "navigation.home": "Home",
+  "navigation.services": "Services",
+  "navigation.method": "Method",
+  "navigation.sellers": "Sellers",
+  "navigation.buyers": "Buyers",
+  "navigation.coaching": "Coaching",
+  "navigation.contact": "Contact",
+
+  "image.hero": "Financial consultation",
+  "image.sellers": "Table with papers and tablet",
+  "image.buyers": "Laptop",
+  "image.coaching": "Laptop",
+
+  "contact-us": "Contact us",
+  "feature-announcement": "Successful entrepreneurship according to Barnsby",
+  "developed-by": "Developed by"
+}
