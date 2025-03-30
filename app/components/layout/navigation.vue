@@ -21,6 +21,12 @@ watch(bps.greater("md"), (v) => {
   }
 });
 
+const route = useRoute();
+
+watch(route, () => {
+  isOpen.value = false;
+});
+
 syncRef(isOpen, isLocked, {
   direction: "ltr",
 });
@@ -88,9 +94,7 @@ syncRef(isOpen, isLocked, {
               :key="item.to.path"
               class="w-full flex justify-center text-muted-foreground py-3 text-xl"
             >
-              <NuxtLinkLocale :to="item.to" @click="isOpen = false"
-                >{{ item.title }}
-              </NuxtLinkLocale>
+              <NuxtLinkLocale :to="item.to">{{ item.title }} </NuxtLinkLocale>
             </li>
             <li
               class="w-full flex justify-center text-muted-foreground py-3 text-xl"
